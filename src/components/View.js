@@ -6,9 +6,9 @@ import EditForm from './EditForm';
 import axiosWithAuth from '../utils/axiosWithAuth';
 import articleService from '../services/articleServices';
 
-const View = () =>
+const View = (props) =>
 {
-    const {push} = useHistory();
+    const {push} = useHistory(); // receiving error here when this is taken from the guided project
     const [articles, setArticles] = useState([]);
     const [editing, setEditing] = useState(false);
     const [editId, setEditId] = useState();

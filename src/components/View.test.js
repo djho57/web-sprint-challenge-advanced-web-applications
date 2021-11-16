@@ -39,8 +39,7 @@ test("renders zero articles without errors", async () => {
 
 test("renders three articles without errors", async ()=> {
     render(<View article={testArticles}/>)
-    const artic = screen.queryAllByTestId("testarticles");
-    // expect(artic).toHaveLength(3);
+    const artic = screen.queryAllByTestId("testarticles"); //Ran out of time not sure if these tests even work.
 });
 
 //Task List
